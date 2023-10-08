@@ -41,14 +41,26 @@ def lambda_handler(event, context):
 def command_handler(body):
     command = body["data"]["name"]
 
-    if command == "test":
+    if command == "asdf":
         return {
             "statusCode": 200,
             "body": json.dumps(
                 {
                     "type": 4,
                     "data": {
-                        "content": "Hello, World.",
+                        "content": "hi mom",
+                    },
+                }
+            ),
+        }
+    if command == "weewoo":
+        return {
+            "statusCode": 200,
+            "body": json.dumps(
+                {
+                    "type": 4,
+                    "data": {
+                        "content": "hi mom",
                     },
                 }
             ),
