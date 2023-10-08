@@ -1,5 +1,4 @@
 import json
-import dotenv
 
 from nacl.signing import VerifyKey
 from nacl.exceptions import BadSignatureError
